@@ -1,0 +1,91 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all ease 1s;
+}
+.my-navbar {
+  justify-content: space-between;
+  padding: 50px 0;
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 5px;
+    }
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-item {
+    margin: 0 15px;
+  }
+  a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .lang-login {
+    display: flex;
+    align-items: center;
+  }
+}
+.lang-drop {
+  margin: 0 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  user-select: none;
+  .flag {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+  .lang-drop-selected {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 10px;
+    }
+  }
+  .lang-select {
+    cursor: pointer;
+  }
+  .chevron {
+    transition: all ease 0.5s;
+  }
+  &.open {
+    .chevron {
+      transform: rotate(180deg);
+    }
+    .lang-drop-menu {
+      opacity: 1;
+      transform: translateY(5px);
+    }
+  }
+  .lang-drop-menu {
+    transition: all ease 0.5s;
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 4px;
+    right: 30px;
+    a {
+      color: #ed4c5c;
+      margin-bottom: 5px;
+    }
+  }
+}

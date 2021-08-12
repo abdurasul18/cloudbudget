@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.my-btn {
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-btn-first {
+  background: #fff;
+  color: #ed4c5c;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+      color: #ed4c5c;
+  }
+}

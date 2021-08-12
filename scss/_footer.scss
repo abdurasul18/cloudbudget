@@ -1,0 +1,27 @@
+footer {
+  background: #fafafa;
+  padding: 85px 0;
+  .title {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 33px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    a {
+      font-family: Lato;
+      font-size: 12px;
+      text-transform: capitalize;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  .copy-right {
+    font-family: Lato;
+    font-size: 12px;
+    margin-top: 140px;
+  }
+}

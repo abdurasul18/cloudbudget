@@ -1,0 +1,25 @@
+@media (max-width: 992px) {
+  header {
+    .navbar-nav {
+      display: none;
+    }
+  }
+  .video {
+      width: 100%;
+      margin-top: 30px;
+  }
+  .title-lg {
+      font-size: 52px;
+  }
+}
+@media (max-width:768px) {
+    .video .controller {
+        animation: none!important;
+        left: calc( 50% - 33px );
+    }
+}
+@media (max-width:576px) {
+    .title-lg {
+        font-size: 32px;
+    }
+}
